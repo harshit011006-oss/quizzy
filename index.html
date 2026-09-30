@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff6f7" />
+  <title>Just Us ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+  <div id="hearts" class="hearts" aria-hidden="true"></div>
+
+  <main class="quiz-shell">
+    <section class="quiz-card" id="quizCard">
+      <div class="top-line">
+        <span class="tiny-heart">♥</span>
+        <span id="progressText">Question 1 of 6</span>
+      </div>
+
+      <div class="progress-track">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+
+      <div id="questionView">
+        <p class="eyebrow">A little test of us</p>
+        <h1 id="question"></h1>
+        <p class="hint">Choose one ♡</p>
+
+        <div id="options" class="options"></div>
+
+        <button id="nextBtn" class="next-btn" type="button" disabled>
+          Lock it in <span>→</span>
+        </button>
+      </div>
+
+      <div id="resultView" class="result-view hidden">
+        <div id="resultIcon" class="result-icon">♥</div>
+        <p class="eyebrow">Quiz complete</p>
+        <h2 id="scoreTitle"></h2>
+        <p id="scoreText" class="score-text"></p>
+        <div class="score-badge">
+          <span id="scoreNumber">0</span>
+          <small>/ 6</small>
+        </div>
+        <button id="restartBtn" class="next-btn" type="button">
+          Try again <span>↻</span>
+        </button>
+      </div>
+    </section>
+
+    <p class="footer-note">made with a little too much love ♡</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
